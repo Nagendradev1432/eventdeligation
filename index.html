@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="cart">
+        <li id="clothes">clothes</li>
+        <li id="bikes">bikes</li>
+        <li id="books">books</li>
+    </ul>
+    <p id="product"></p>
+    <script>
+        let cart=document.getElementById("cart")
+        let clothes=document.getElementById("clothes")
+        let bikes=document.getElementById("bikes")
+        let books=document.getElementById("books")
+        let product=document.getElementById("product")
+
+
+            clothes.addEventListener("click",()=>{
+            product.innerHTML="clothes is selected"
+            })
+
+            books.addEventListener("click",()=>{
+                product.innerHTML="books is selected"
+            })
+
+            bikes.addEventListener("click",()=>{
+                product.innerHTML="bikes is selected"
+            })
+
+            cart.addEventListener("click",(e)=>{console.log(e.target.id)})
+    </script>
+</body>
+</html>
